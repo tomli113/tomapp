@@ -1,0 +1,33 @@
+<section>
+    VmInclude:__BASE__/vmiis/Common-Code/grid/grid.html
+</section>
+<script>
+    function F__ID(){
+        //-------------------------------------
+        _fields="_Form,Item,Date,Amount,Paid_By,Currency";
+        _fields+=",Submit Date|DateTime,Submitted by|Author,_Delete";
+        //-------------------------------------
+        VmInclude:__BASE__/vmiis/Common-Code/grid/grid.js
+        VmInclude:__BASE__/vmiis/Common-Code/style/ease-in-out.js
+        //-------------------------------------
+        $('#D__ID').on('load',function(){  _set_req(); _request_data(); })
+        //-------------------------------------
+        _columns_process=function(columns){
+            columns[0]={data:'Item',type:'dropdown',trimDropdown:false,source:[
+                "---","Hotel","Train","Lunch","Dinner","Traffic expenditures","Supermarket","Tickets","Storage Luggage","Phone Card","Others"
+            ]};
+            columns[1]={data:'Date',width:120,type: 'date',format: 'DD/MM/YYYY',correctFormat:true};
+            columns[2]={data:'Amount',type: 'numeric',format: '$ 0,0.00[0000]'};
+            columns[3]={data:'Paid_By',type:'dropdown',trimDropdown:false,source:[
+                "---","Shi lu","Tom Li"
+            ]};
+            columns[4]={data:'Currency',type:'dropdown',trimDropdown:false,source:[
+                "---","EUR","CHF","AUD","USD"
+            ]};
+        }
+        //-------------------------------------
+    }
+</script>
+<style>
+    VmInclude:__BASE__/vmiis/Common-Code/grid/grid.css
+</style>
