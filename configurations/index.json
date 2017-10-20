@@ -6,6 +6,10 @@
 	{
 		"home":		{	"url":"/modules/static/home.html"		},
 		"portal":	{	"url":"/modules/static/portal-panel.html"},
-		"simple-static-content-module":{	"url":"/modules/static/simple-static-content-module.html"}
+
+		"simple-static-content-module":{	"url":"/modules/static/simple-static-content-module.html"},
+		"automatic-slide-show-w3":		{"url":"/modules/static/automatic-slide-show-w3.html"},
+		"carousel-slide-b4":			{"url":"/modules/static/carousel-slide-b4.html"},
+		"price":						{"url":"/modules/static/price.html"}
 	}
 }
