@@ -11,6 +11,8 @@
 		"automatic-slide-show-w3":		{"url":"/modules/static/automatic-slide-show-w3.html"},
 		"carousel-slide-b4":			{"url":"/modules/static/carousel-slide-b4.html"},
 		"price":						{"url":"/modules/static/price.html"},
+		"upload_photo":				    {"url":"/modules/dynamic/photo/upload_photo.html","table_id":"20008531"},
+		"search_and_display":			{"url":"/modules/dynamic/photo/search_and_display.html","table_id":"20008531"},
 		"photo_category":				{"url":"/modules/dynamic/photo/category.html","table_id":"20008535"}
 	}
 }
